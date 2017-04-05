@@ -35,7 +35,6 @@ def get_passwords(amount=None, config=None):
 #  Service Layer {{{ #
 class Passwords(Resource):
     def get(self):
-        pw = get_passwords()
         args = parser.parse_args()
         amount = args["amount"]
         config = args["config"]
@@ -48,7 +47,7 @@ class Passwords(Resource):
 class WiFiPasswords(Resource):
     def get(self):
         args = parser.parse_args()
-        amount = get_passwords(args["amount"])
+        amount = args["amount"]
         pws = get_passwords(amount, config="hsxkpasswd.config")
         return jsonify( passwords = pws )
 #  }}} Service Layer #
