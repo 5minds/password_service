@@ -13,8 +13,9 @@ parser.add_argument('config', type=str, help='The config file for the generator'
 
 #  Repo Layer {{{ #
 def get_passwords(amount=None, config=None):
-    cmd = "hsxkpasswd" if amount is None else "hsxkpasswd {} -w NONE".format(amount)
+    cmd = "hsxkpasswd" if amount is None else "hsxkpasswd {}".format(amount)
     cmd = cmd if config is None else "{} --config-file {}".format(cmd, config)
+    cmd = "{} -w NONE".format(cmd)
 
     try:
         result_string = subprocess.check_output(
@@ -26,6 +27,7 @@ def get_passwords(amount=None, config=None):
         return ""
 
     pw_list = result_string.split('\n')
+
     return pw_list[:-1]
 #  }}} Repo Layer #
 
