@@ -15,4 +15,3 @@ class Passwords(Resource):
         pws = pw_repo.get_passwords(amount, config)
 
         return jsonify( passwords = pws )
-
