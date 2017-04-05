@@ -54,8 +54,8 @@ class WiFiPasswords(Resource):
 
 
 #  Router {{{ #
-api.add_resource(Passwords, '/passwords')
 api.add_resource(WiFiPasswords, '/passwords/wifi')
+api.add_resource(Passwords, '/passwords')
 #  }}} Router #
 
 if __name__ == '__main__':
