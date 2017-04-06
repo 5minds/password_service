@@ -55,68 +55,68 @@ CAME-PROBABLY-pulled-shot-perfect
 
 1. Python virtualenv muss installiert sein
 
-  ```bash
-  pip install virtualenv
-  ```
+   ```bash
+   pip install virtualenv
+   ```
 
 1. Einrichten der virtualenv
 
-  ```bash
-  virtualenv -p python2.7 .
-  ```
+   ```bash
+   virtualenv -p python2.7 .
+   ```
 
 1. Aktivierung der virtualenv
 
-  ```bash
-  source bin/activate
-  ```
+   ```bash
+   source bin/activate
+   ```
 
-  Alles was wir nun installieren landet in den lokalen Ordnern und nicht im
-  System Hauptverzeichnis. Die erfolgreiche Installation der virtualenv kann mit
-  folgendem Verfahren getestet werden:
+   Alles was wir nun installieren landet in den lokalen Ordnern und nicht im
+   System Hauptverzeichnis. Die erfolgreiche Installation der virtualenv kann mit
+   folgendem Verfahren getestet werden:
 
-  ```python
-  >>> import sys
-  >>> sys.prefix
-  '/Users/cmg/src/5minds/password_service/app/bin/..'
-  ```
+   ```python
+   >>> import sys
+   >>> sys.prefix
+   '/Users/cmg/src/5minds/password_service/app/bin/..'
+   ```
 
-  Der angezeigte Pfad sollte im aktuellem Verzeichnis liegen.
+   Der angezeigte Pfad sollte im aktuellem Verzeichnis liegen.
 
 1. Installieren der Abhängigkeiten
 
-  Im app Verzeichnis befindet sich eine requirements.txt, diese enthält die
-  Pakete, die der Service benötigt.  Der folgende Aufruf installiert diese
-  lokal.
+   Im app Verzeichnis befindet sich eine requirements.txt, diese enthält die
+   Pakete, die der Service benötigt.  Der folgende Aufruf installiert diese
+   lokal.
 
-  ```bash
-  pip install -r requirements.txt
-  ```
-
-1. Anfügen zusätzlicher Abhängigkeiten
-
-  Werden zusätzliche Abhängigkeiten benötigt, benutzt mal folgenden Aufruf:
-
-  ```bash
-  pip install <packet>
-  ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 1. Anfügen zusätzlicher Abhängigkeiten
 
-  ```bash
-  pip install <packet>
-  ```
+   Werden zusätzliche Abhängigkeiten benötigt, benutzt mal folgenden Aufruf:
+
+   ```bash
+   pip install <packet>
+   ```
+
+1. Anfügen zusätzlicher Abhängigkeiten
+
+   ```bash
+   pip install <packet>
+   ```
 
 1. Einfrieren von Abhängigkeiten
 
-  ```bash
-  pip freeze > requirements.txt
-  ```
+   ```bash
+   pip freeze > requirements.txt
+   ```
 
   Diese Abhängigkeiten sollten eingecheckt werden.
 
 1. Deaktivierung der virtualenv
 
-  ```bash
-  deactivate
-  ```
+    ```bash
+    deactivate
+    ```
