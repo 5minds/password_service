@@ -7,9 +7,12 @@ bereitstellt.
 
 Wir haben an vielen Stellen die Notwendigkeit Passwörter nach verschiedenen
 Schemata zu generieren. Das kann zu einer Unübersichtlichkeit führen.
+Zusätzlich hat sich gezeigt, das viele selbst erstellte Dienste sehr Starr sind
+und nur schwierig angepasst werden können.
 
 Die hier vorgestellte Lösung verwendet das Perl Modul Crypt::HSXKPasswd.
-Dieses ist ein Standard Werkzeug, ausgezeichnet Dokumentiert und gepflegt.
+Dieses ist ein Standard Werkzeug,es ist ausgezeichnet Dokumentiert und wird
+aktiv gepflegt.
 
 Es unterstützt verschiedene Konfigurationen, die einfach ausgetauscht werden können.
 
