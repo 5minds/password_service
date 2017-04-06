@@ -17,8 +17,18 @@ Es unterstützt verschiedene Konfigurationen, die einfach ausgetauscht werden k�
 
 ### Voraussetzungen
 
+**Production**
+
 * Docker
 * Perl (im Container)
+* Python (im Container)
+
+**Development**
+
+Zusätzlich zu den Production beschrieben Abhängigkeiten wird folgendes benötigt:
+
+* Python 2.7
+* virtualenv
 
 ### Setup
 
