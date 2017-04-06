@@ -28,7 +28,7 @@ Es unterstützt verschiedene Konfigurationen, die einfach ausgetauscht werden k�
 
 **Development**
 
-Zusätzlich zu den Production beschrieben Abhängigkeiten wird folgendes benötigt:
+Zusätzlich zu den unter Production beschrieben Abhängigkeiten wird folgendes benötigt:
 
 * Python 2.7
 * virtualenv
@@ -89,7 +89,7 @@ CAME-PROBABLY-pulled-shot-perfect
 1. Installieren der Abhängigkeiten
 
    Im app Verzeichnis befindet sich eine requirements.txt, diese enthält die
-   Pakete, die der Service benötigt.  Der folgende Aufruf installiert diese
+   Pakete, die der Service benötigt. Der folgende Aufruf installiert diese
    lokal.
 
    ```bash
@@ -98,7 +98,7 @@ CAME-PROBABLY-pulled-shot-perfect
 
 1. Anfügen zusätzlicher Abhängigkeiten
 
-   Werden zusätzliche Abhängigkeiten benötigt, benutzt mal folgenden Aufruf:
+   Werden zusätzliche Abhängigkeiten benötigt, benutzt man folgenden Aufruf:
 
    ```bash
    pip install <packet>
