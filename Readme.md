@@ -113,10 +113,10 @@ CAME-PROBABLY-pulled-shot-perfect
    pip freeze > requirements.txt
    ```
 
-  Diese Abhängigkeiten sollten eingecheckt werden.
+   Diese Abhängigkeiten sollten eingecheckt werden.
 
 1. Deaktivierung der virtualenv
 
-    ```bash
-    deactivate
-    ```
+   ```bash
+   deactivate
+   ```
